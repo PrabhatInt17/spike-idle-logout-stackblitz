@@ -38,7 +38,6 @@ export class AppComponent implements OnInit  {
   timeoutWatcher() {
     localStorage.setItem('expiresIn', '1581264960000');
     var expiresIn = localStorage.getItem('expiresIn');
-    console.log('expires in', Number(expiresIn));
     console.log('expires in String', new Date( Number(expiresIn)));
     console.log('remaining time',new Date( Number(expiresIn)).getTime()-new Date().getTime());
     //checking if expiresIn - current time is in negativity to check session already expired
