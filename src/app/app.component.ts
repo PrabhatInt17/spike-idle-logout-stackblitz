@@ -36,7 +36,7 @@ export class AppComponent implements OnInit  {
   }
 
   timeoutWatcher() {
-    localStorage.setItem('expiresIn', '1581264960000');
+    localStorage.setItem('expiresIn', '1581269100000');
     var expiresIn = localStorage.getItem('expiresIn');
     console.log('expires in String', new Date( Number(expiresIn)));
     console.log('remaining time',new Date( Number(expiresIn)).getTime()-new Date().getTime());
