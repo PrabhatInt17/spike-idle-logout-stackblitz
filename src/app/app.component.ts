@@ -43,7 +43,7 @@ export class AppComponent implements OnInit  {
     //checking if expiresIn - current time is in negativity to check session already expired
     if((new Date( Number(expiresIn)).getTime()-new Date().getTime())> 0) {
       var timeoutStart = new Date(Number(expiresIn) - 60000).getTime() - new Date().getTime();
-    console.log('timeoutstart', timeoutStart );
+      console.log('timeoutstart', timeoutStart );
 
     //staring timeout for the session - one minute as buffer time for token refresh
     var expiresInTimer = setTimeout(() => {
